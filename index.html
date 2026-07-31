@@ -1,187 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I'm Sorry, Rose ❤️</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    height:100vh;
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffc3a0);
-    animation:bg 10s infinite alternate;
-}
-
-@keyframes bg{
-    from{filter:hue-rotate(0deg);}
-    to{filter:hue-rotate(20deg);}
-}
-
-.container{
-    width:90%;
-    max-width:750px;
-    background:rgba(255,255,255,.15);
-    backdrop-filter:blur(20px);
-    border-radius:30px;
-    padding:45px;
-    text-align:center;
-    color:white;
-    box-shadow:0 0 40px rgba(0,0,0,.25);
-    z-index:10;
-}
-
-h1{
-    font-size:3rem;
-    margin-bottom:15px;
-    animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-    0%,100%{transform:scale(1);}
-    50%{transform:scale(1.05);}
-}
-
-p{
-    font-size:1.15rem;
-    line-height:1.8;
-    margin:20px 0;
-}
-
-button{
-    margin-top:25px;
-    padding:15px 35px;
-    font-size:18px;
-    border:none;
-    border-radius:50px;
-    background:white;
-    color:#ff4f87;
-    cursor:pointer;
-    transition:.3s;
-    font-weight:bold;
-}
-
-button:hover{
-    transform:scale(1.08);
-    box-shadow:0 0 20px white;
-}
-
-#message{
-    margin-top:25px;
-    font-size:24px;
-    display:none;
-    animation:fade 1s;
-}
-
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.heart{
-    position:absolute;
-    color:#fff;
-    font-size:25px;
-    animation:float linear infinite;
-    opacity:.8;
-}
-
-@keyframes float{
-    from{
-        transform:translateY(110vh) rotate(0deg);
-        opacity:0;
-    }
-    10%{
-        opacity:1;
-    }
-    to{
-        transform:translateY(-120vh) rotate(360deg);
-        opacity:0;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-<h1>I'm Sorry, Rose ❤️</h1>
+<h1>To My Beautiful Rose 🌹❤️</h1>
 
 <p>
-Rose,
+Rose...
+Out of the billions of people in this world,
+somehow my heart chose you.
+And honestly?
+I'd choose you again in every lifetime.
 </p>
 
 <p>
-I know I hurt you with my behaviour, and that's the last thing I ever wanted to do.
-I'm truly sorry for everything I said or did that made you feel upset.
-You deserve kindness, respect, and love, and I'm sorry for falling short of that.
+You're my favorite notification.
+My favorite smile.
+My favorite laugh.
+My favorite person.
+My favorite everything.
 </p>
 
 <p>
-I love you more than words can ever describe.
-You mean so much to me, and the thought of losing you honestly breaks my heart.
-If I could go back and change my mistakes, I would do it in a heartbeat.
+You make my bad days feel lighter,
+my good days feel unforgettable,
+and every moment with you feels like home.
 </p>
 
 <p>
-Please forgive me.
-I promise to learn from my mistakes, treat you better, and never stop trying to make you smile.
-Thank you for being such an amazing person.
-No matter what happens, you'll always have a special place in my heart.
+I don't know what I did to deserve someone like you,
+but I promise I'll spend forever being grateful for it.
 </p>
 
-<p style="font-size:22px;font-weight:bold;">
-I Love You So Much, Rose. ❤️🌹
+<p>
+You have the prettiest smile,
+the cutest laugh,
+the most beautiful eyes,
+and somehow...
+you still don't realize how amazing you are.
 </p>
 
-<button onclick="forgive()">Forgive Me? ❤️</button>
+<p>
+I don't want anyone else.
+I don't look for anyone else.
+Because the person I want is already reading this.
+❤️
+</p>
 
-<div id="message">
-🌹 Thank you for reading this.<br>
-I love you forever, Rose ❤️
-</div>
+<p>
+Every "I love you" I tell you
+comes from the deepest part of my heart.
+And somehow...
+I still feel like those three words aren't enough.
+</p>
 
+<p>
+If I could have one wish,
+it would simply be...
+more time with you.
+More laughs.
+More hugs.
+More memories.
+More us.
+</p>
+
+<p>
+You didn't just become my girlfriend...
+you became my safe place.
+My happiness.
+My peace.
+</p>
+
+<p>
+No matter how many years pass,
+I hope we still laugh at dumb jokes,
+still annoy each other,
+still call each other cute names,
+and still love each other just as much.
+</p>
+
+<h2 style="margin-top:40px;">
+So... ❤️
+</h2>
+
+<h1 style="font-size:2.7rem;color:#ffd6e8;">
+Will You Stay With Me Forever? 🌹
+</h1>
+
+<p style="margin-top:20px;font-size:20px;">
+No pressure.
+No matter what...
+I'll always be thankful that I got to love someone as incredible as you.
+But if forever has a name...
+I hope it's us.
+❤️
+</p>
+
+<button onclick="love()">Forever ❤️</button>
+
+<div id="forever" style="display:none;margin-top:30px;font-size:28px;">
+🌹 I love you more than yesterday,
+but less than tomorrow.
+Forever and always, Rose. ❤️
 </div>
 
 <script>
-function forgive(){
-    document.getElementById("message").style.display="block";
+function love(){
+    document.getElementById("forever").style.display="block";
 }
-
-function createHeart(){
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML=["❤️","💖","💕","🌹","💗"][Math.floor(Math.random()*5)];
-
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.fontSize=(20+Math.random()*30)+"px";
-    heart.style.animationDuration=(5+Math.random()*5)+"s";
-
-    document.body.appendChild(heart);
-
-    setTimeout(()=>{
-        heart.remove();
-    },10000);
-}
-
-setInterval(createHeart,250);
 </script>
-
-</body>
-</html>
